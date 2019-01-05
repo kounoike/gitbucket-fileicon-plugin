@@ -1,0 +1,19 @@
+{
+  "name": "gitbucket-fileicon-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kounoike/gitbucket-fileicon-plugin",
+  "author": "KOUNOIKE <kounoike.yuusuke@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "dependencies": {
+    "file-icons-js": "^1.0.3",
+    "url-loader": "^1.1.2"
+  }
+}
