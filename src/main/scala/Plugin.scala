@@ -15,7 +15,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
     val jsPath = settings.baseUrl.getOrElse(context.getContextPath) + "/plugin-assets/fileicon/bundle/entry.js"
     Seq(".*" ->
       s"""</script>
-        |<script src=${jsPath}>""".stripMargin)
+        |<script src="${jsPath}">""".stripMargin)
   }
 
 }
