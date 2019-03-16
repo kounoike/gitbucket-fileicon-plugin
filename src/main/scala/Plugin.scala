@@ -9,10 +9,10 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   override val description: String = "Fancy file icon for  GitBucket plug-in"
   override val versions: List[Version] = List(new Version("1.0.0"))
 
-  override val assetsMappings: Seq[(String, String)] = Seq("/fileicon" -> "/")
+  override val assetsMappings: Seq[(String, String)] = Seq("/fileicon" -> "/bundle")
 
   override def javaScripts(registry: PluginRegistry, context: ServletContext, settings: SystemSettingsService.SystemSettings): Seq[(String, String)] = {
-    val jsPath = settings.baseUrl.getOrElse(context.getContextPath) + "/plugin-assets/fileicon/bundle/entry.js"
+    val jsPath = settings.baseUrl.getOrElse(context.getContextPath) + "/plugin-assets/fileicon/entry.js"
     Seq(".*" ->
       s"""</script>
         |<script src="${jsPath}">""".stripMargin)
