@@ -47,3 +47,8 @@ jobs:
         yarn install --frozen-lockfile --production=false
         npx webpack
         sbt assembly
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: plugin-jar
+        path: target/scala-*/gitbucket-*-plugin-*.jar
