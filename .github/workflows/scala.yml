@@ -44,4 +44,6 @@ jobs:
         key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
     - name: Run build
       run: |
-        sbt yarn webpack assembly
+        yarn install --frozen-lockfile --production=false
+        npx webpack
+        sbt assembly
