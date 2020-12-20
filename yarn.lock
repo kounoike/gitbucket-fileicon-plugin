@@ -876,9 +876,9 @@ figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
 
-file-icons-js@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/file-icons-js/-/file-icons-js-1.0.3.tgz#d0765dc1d86aba4b2d7664a39e4ef7af9f12c5af"
+file-icons-js@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/file-icons-js/-/file-icons-js-1.1.0.tgz#da5e0679a58ab661abf9ec6c2a47c5f14f638ab6"
 
 file-loader@3.0.1:
   version "3.0.1"
