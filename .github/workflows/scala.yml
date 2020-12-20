@@ -34,6 +34,11 @@ jobs:
         key: ${{ runner.os }}-sbt-cache-${{ github.run_id }}
         restore-keys: |
           ${{ runner.os }}-sbt-cache-
+    - name: Cache Yarn
+      uses: actions/cache@v2
+      with:
+        path: '**/node_modules'
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
     - name: Run build
       run: |
         sbt yarn webpack assembly
