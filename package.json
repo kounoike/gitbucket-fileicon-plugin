@@ -6,7 +6,7 @@
   "author": "KOUNOIKE <kounoike.yuusuke@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "css-loader": "5.0.1",
+    "css-loader": "5.1.2",
     "file-loader": "6.2.0",
     "style-loader": "2.0.0",
     "webpack": "4.44.2",
